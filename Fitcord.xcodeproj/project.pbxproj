@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26C1207821B9F1B30F3DC51A /* libPods-Fitcord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6AF3A9941F304EB15C55CC /* libPods-Fitcord.a */; };
+		E501E0ED227D962E006F67C7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0EC227D962E006F67C7 /* SignupViewController.swift */; };
+		E501E0EF227D9713006F67C7 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0EE227D9713006F67C7 /* AuthenticationViewController.swift */; };
+		E501E0F1227DC40E006F67C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */; };
+		E501E0F3227DC6C9006F67C7 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0F2227DC6C9006F67C7 /* InitialViewController.swift */; };
+		E501E0F5227DD018006F67C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0F4227DD018006F67C7 /* LoginViewController.swift */; };
+		E533EC032279712E00123792 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533EC022279712E00123792 /* ExerciseTableViewCell.swift */; };
+		E533EC052279764700123792 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533EC042279764700123792 /* ExerciseDetailViewController.swift */; };
+		E533EC0722797D0600123792 /* TabBarIcon in Resources */ = {isa = PBXBuildFile; fileRef = E533EC0622797D0600123792 /* TabBarIcon */; };
+		E533EC0C2279B0B600123792 /* Exercise Images in Resources */ = {isa = PBXBuildFile; fileRef = E533EC0B2279B0B600123792 /* Exercise Images */; };
+		E533EC0E2279D9C700123792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E533EC0D2279D9C700123792 /* Assets.xcassets */; };
+		E55B5C61227AC17B00856593 /* CreateExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B5C60227AC17B00856593 /* CreateExerciseViewController.swift */; };
+		E55B5C63227ACC1300856593 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E55B5C62227ACC1300856593 /* GoogleService-Info.plist */; };
+		E588E47F2276D05600A29DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588E47E2276D05600A29DD4 /* AppDelegate.swift */; };
+		E588E4862276D05600A29DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E588E4842276D05600A29DD4 /* Main.storyboard */; };
+		E588E48B2276D05800A29DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E588E4892276D05800A29DD4 /* LaunchScreen.storyboard */; };
+		E588E4962276D05800A29DD4 /* FitcordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588E4952276D05800A29DD4 /* FitcordTests.swift */; };
+		E588E4A12276D05800A29DD4 /* FitcordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588E4A02276D05800A29DD4 /* FitcordUITests.swift */; };
+		E592C7FB22787478001A6078 /* ExercisesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C7FA22787478001A6078 /* ExercisesListTableViewController.swift */; };
+		E592C7FF2278752F001A6078 /* Exercises.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E592C7FD2278752F001A6078 /* Exercises.xcdatamodeld */; };
+		E592C80622787628001A6078 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C80522787628001A6078 /* DatabaseProtocol.swift */; };
+		E592C80822787678001A6078 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C80722787678001A6078 /* CoreDataController.swift */; };
+		E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C809227876B0001A6078 /* MulticastDelegate.swift */; };
+		E592C8132278787D001A6078 /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C8112278787D001A6078 /* Exercise+CoreDataClass.swift */; };
+		E592C8142278787D001A6078 /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C8122278787D001A6078 /* Exercise+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E588E4922276D05800A29DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E588E4732276D05600A29DD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E588E47A2276D05600A29DD4;
+			remoteInfo = Fitcord;
+		};
+		E588E49D2276D05800A29DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E588E4732276D05600A29DD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E588E47A2276D05600A29DD4;
+			remoteInfo = Fitcord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E5F5884E7AAB1F6B6DD36F0 /* Pods-Fitcord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcord.release.xcconfig"; path = "Target Support Files/Pods-Fitcord/Pods-Fitcord.release.xcconfig"; sourceTree = "<group>"; };
+		7F4E6C890402CC0E374969BA /* Pods-Fitcord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcord.debug.xcconfig"; path = "Target Support Files/Pods-Fitcord/Pods-Fitcord.debug.xcconfig"; sourceTree = "<group>"; };
+		DE6AF3A9941F304EB15C55CC /* libPods-Fitcord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fitcord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E501E0EC227D962E006F67C7 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E501E0EE227D9713006F67C7 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E501E0F2227DC6C9006F67C7 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		E501E0F4227DD018006F67C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E533EC022279712E00123792 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		E533EC042279764700123792 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		E533EC0622797D0600123792 /* TabBarIcon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TabBarIcon; sourceTree = "<group>"; };
+		E533EC0B2279B0B600123792 /* Exercise Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Exercise Images"; sourceTree = "<group>"; };
+		E533EC0D2279D9C700123792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E55B5C60227AC17B00856593 /* CreateExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExerciseViewController.swift; sourceTree = "<group>"; };
+		E55B5C62227ACC1300856593 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E588E47B2276D05600A29DD4 /* Fitcord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitcord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E588E47E2276D05600A29DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E588E4852276D05600A29DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E588E48A2276D05800A29DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E588E48C2276D05800A29DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E588E4912276D05800A29DD4 /* FitcordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitcordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E588E4952276D05800A29DD4 /* FitcordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitcordTests.swift; sourceTree = "<group>"; };
+		E588E4972276D05800A29DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E588E49C2276D05800A29DD4 /* FitcordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitcordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E588E4A02276D05800A29DD4 /* FitcordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitcordUITests.swift; sourceTree = "<group>"; };
+		E588E4A22276D05800A29DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E592C7FA22787478001A6078 /* ExercisesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesListTableViewController.swift; sourceTree = "<group>"; };
+		E592C7FE2278752F001A6078 /* Exercises.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Exercises.xcdatamodel; sourceTree = "<group>"; };
+		E592C80522787628001A6078 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		E592C80722787678001A6078 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		E592C809227876B0001A6078 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		E592C8112278787D001A6078 /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E592C8122278787D001A6078 /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E588E4782276D05600A29DD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26C1207821B9F1B30F3DC51A /* libPods-Fitcord.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E588E48E2276D05800A29DD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E588E4992276D05800A29DD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48DFE80D8C3EB49F20C3FE5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE6AF3A9941F304EB15C55CC /* libPods-Fitcord.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E588E4722276D05600A29DD4 = {
+			isa = PBXGroup;
+			children = (
+				E588E47D2276D05600A29DD4 /* Fitcord */,
+				E588E4942276D05800A29DD4 /* FitcordTests */,
+				E588E49F2276D05800A29DD4 /* FitcordUITests */,
+				E588E47C2276D05600A29DD4 /* Products */,
+				E533EC0D2279D9C700123792 /* Assets.xcassets */,
+				F83B2FC81204B0CE25396C46 /* Pods */,
+				48DFE80D8C3EB49F20C3FE5F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E588E47C2276D05600A29DD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E588E47B2276D05600A29DD4 /* Fitcord.app */,
+				E588E4912276D05800A29DD4 /* FitcordTests.xctest */,
+				E588E49C2276D05800A29DD4 /* FitcordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E588E47D2276D05600A29DD4 /* Fitcord */ = {
+			isa = PBXGroup;
+			children = (
+				E55B5C62227ACC1300856593 /* GoogleService-Info.plist */,
+				E533EC0B2279B0B600123792 /* Exercise Images */,
+				E533EC0622797D0600123792 /* TabBarIcon */,
+				E592C8042278760D001A6078 /* Database */,
+				E592C7FC227874C6001A6078 /* DataModel */,
+				E592C7F92278745F001A6078 /* ViewController */,
+				E588E47E2276D05600A29DD4 /* AppDelegate.swift */,
+				E588E4842276D05600A29DD4 /* Main.storyboard */,
+				E588E4892276D05800A29DD4 /* LaunchScreen.storyboard */,
+				E588E48C2276D05800A29DD4 /* Info.plist */,
+			);
+			path = Fitcord;
+			sourceTree = "<group>";
+		};
+		E588E4942276D05800A29DD4 /* FitcordTests */ = {
+			isa = PBXGroup;
+			children = (
+				E588E4952276D05800A29DD4 /* FitcordTests.swift */,
+				E588E4972276D05800A29DD4 /* Info.plist */,
+			);
+			path = FitcordTests;
+			sourceTree = "<group>";
+		};
+		E588E49F2276D05800A29DD4 /* FitcordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E588E4A02276D05800A29DD4 /* FitcordUITests.swift */,
+				E588E4A22276D05800A29DD4 /* Info.plist */,
+			);
+			path = FitcordUITests;
+			sourceTree = "<group>";
+		};
+		E592C7F92278745F001A6078 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E592C7FA22787478001A6078 /* ExercisesListTableViewController.swift */,
+				E533EC022279712E00123792 /* ExerciseTableViewCell.swift */,
+				E533EC042279764700123792 /* ExerciseDetailViewController.swift */,
+				E55B5C60227AC17B00856593 /* CreateExerciseViewController.swift */,
+				E501E0EC227D962E006F67C7 /* SignupViewController.swift */,
+				E501E0EE227D9713006F67C7 /* AuthenticationViewController.swift */,
+				E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */,
+				E501E0F2227DC6C9006F67C7 /* InitialViewController.swift */,
+				E501E0F4227DD018006F67C7 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E592C7FC227874C6001A6078 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E592C8112278787D001A6078 /* Exercise+CoreDataClass.swift */,
+				E592C8122278787D001A6078 /* Exercise+CoreDataProperties.swift */,
+				E592C7FD2278752F001A6078 /* Exercises.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		E592C8042278760D001A6078 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E592C80522787628001A6078 /* DatabaseProtocol.swift */,
+				E592C80722787678001A6078 /* CoreDataController.swift */,
+				E592C809227876B0001A6078 /* MulticastDelegate.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F83B2FC81204B0CE25396C46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F4E6C890402CC0E374969BA /* Pods-Fitcord.debug.xcconfig */,
+				2E5F5884E7AAB1F6B6DD36F0 /* Pods-Fitcord.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E588E47A2276D05600A29DD4 /* Fitcord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E588E4A52276D05800A29DD4 /* Build configuration list for PBXNativeTarget "Fitcord" */;
+			buildPhases = (
+				4C8B402E844CE17A8261CCFE /* [CP] Check Pods Manifest.lock */,
+				E588E4772276D05600A29DD4 /* Sources */,
+				E588E4782276D05600A29DD4 /* Frameworks */,
+				E588E4792276D05600A29DD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fitcord;
+			productName = Fitcord;
+			productReference = E588E47B2276D05600A29DD4 /* Fitcord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E588E4902276D05800A29DD4 /* FitcordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E588E4A82276D05800A29DD4 /* Build configuration list for PBXNativeTarget "FitcordTests" */;
+			buildPhases = (
+				E588E48D2276D05800A29DD4 /* Sources */,
+				E588E48E2276D05800A29DD4 /* Frameworks */,
+				E588E48F2276D05800A29DD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E588E4932276D05800A29DD4 /* PBXTargetDependency */,
+			);
+			name = FitcordTests;
+			productName = FitcordTests;
+			productReference = E588E4912276D05800A29DD4 /* FitcordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E588E49B2276D05800A29DD4 /* FitcordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E588E4AB2276D05800A29DD4 /* Build configuration list for PBXNativeTarget "FitcordUITests" */;
+			buildPhases = (
+				E588E4982276D05800A29DD4 /* Sources */,
+				E588E4992276D05800A29DD4 /* Frameworks */,
+				E588E49A2276D05800A29DD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E588E49E2276D05800A29DD4 /* PBXTargetDependency */,
+			);
+			name = FitcordUITests;
+			productName = FitcordUITests;
+			productReference = E588E49C2276D05800A29DD4 /* FitcordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E588E4732276D05600A29DD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Van Le";
+				TargetAttributes = {
+					E588E47A2276D05600A29DD4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E588E4902276D05800A29DD4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E588E47A2276D05600A29DD4;
+					};
+					E588E49B2276D05800A29DD4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E588E47A2276D05600A29DD4;
+					};
+				};
+			};
+			buildConfigurationList = E588E4762276D05600A29DD4 /* Build configuration list for PBXProject "Fitcord" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E588E4722276D05600A29DD4;
+			productRefGroup = E588E47C2276D05600A29DD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E588E47A2276D05600A29DD4 /* Fitcord */,
+				E588E4902276D05800A29DD4 /* FitcordTests */,
+				E588E49B2276D05800A29DD4 /* FitcordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E588E4792276D05600A29DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E588E48B2276D05800A29DD4 /* LaunchScreen.storyboard in Resources */,
+				E533EC0C2279B0B600123792 /* Exercise Images in Resources */,
+				E588E4862276D05600A29DD4 /* Main.storyboard in Resources */,
+				E533EC0722797D0600123792 /* TabBarIcon in Resources */,
+				E533EC0E2279D9C700123792 /* Assets.xcassets in Resources */,
+				E55B5C63227ACC1300856593 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E588E48F2276D05800A29DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E588E49A2276D05800A29DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C8B402E844CE17A8261CCFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitcord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E588E4772276D05600A29DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E592C7FF2278752F001A6078 /* Exercises.xcdatamodeld in Sources */,
+				E588E47F2276D05600A29DD4 /* AppDelegate.swift in Sources */,
+				E592C80622787628001A6078 /* DatabaseProtocol.swift in Sources */,
+				E533EC052279764700123792 /* ExerciseDetailViewController.swift in Sources */,
+				E592C8132278787D001A6078 /* Exercise+CoreDataClass.swift in Sources */,
+				E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */,
+				E592C8142278787D001A6078 /* Exercise+CoreDataProperties.swift in Sources */,
+				E55B5C61227AC17B00856593 /* CreateExerciseViewController.swift in Sources */,
+				E501E0ED227D962E006F67C7 /* SignupViewController.swift in Sources */,
+				E501E0EF227D9713006F67C7 /* AuthenticationViewController.swift in Sources */,
+				E533EC032279712E00123792 /* ExerciseTableViewCell.swift in Sources */,
+				E501E0F1227DC40E006F67C7 /* ProfileViewController.swift in Sources */,
+				E501E0F5227DD018006F67C7 /* LoginViewController.swift in Sources */,
+				E592C80822787678001A6078 /* CoreDataController.swift in Sources */,
+				E592C7FB22787478001A6078 /* ExercisesListTableViewController.swift in Sources */,
+				E501E0F3227DC6C9006F67C7 /* InitialViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E588E48D2276D05800A29DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E588E4962276D05800A29DD4 /* FitcordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E588E4982276D05800A29DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E588E4A12276D05800A29DD4 /* FitcordUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E588E4932276D05800A29DD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E588E47A2276D05600A29DD4 /* Fitcord */;
+			targetProxy = E588E4922276D05800A29DD4 /* PBXContainerItemProxy */;
+		};
+		E588E49E2276D05800A29DD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E588E47A2276D05600A29DD4 /* Fitcord */;
+			targetProxy = E588E49D2276D05800A29DD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E588E4842276D05600A29DD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E588E4852276D05600A29DD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E588E4892276D05800A29DD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E588E48A2276D05800A29DD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E588E4A32276D05800A29DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E588E4A42276D05800A29DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E588E4A62276D05800A29DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F4E6C890402CC0E374969BA /* Pods-Fitcord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S52HC4LU57;
+				INFOPLIST_FILE = Fitcord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.Fitcord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E588E4A72276D05800A29DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5F5884E7AAB1F6B6DD36F0 /* Pods-Fitcord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S52HC4LU57;
+				INFOPLIST_FILE = Fitcord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.Fitcord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E588E4A92276D05800A29DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitcordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitcord.app/Fitcord";
+			};
+			name = Debug;
+		};
+		E588E4AA2276D05800A29DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitcordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitcord.app/Fitcord";
+			};
+			name = Release;
+		};
+		E588E4AC2276D05800A29DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitcordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitcord;
+			};
+			name = Debug;
+		};
+		E588E4AD2276D05800A29DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitcordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitcord;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E588E4762276D05600A29DD4 /* Build configuration list for PBXProject "Fitcord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E588E4A32276D05800A29DD4 /* Debug */,
+				E588E4A42276D05800A29DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E588E4A52276D05800A29DD4 /* Build configuration list for PBXNativeTarget "Fitcord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E588E4A62276D05800A29DD4 /* Debug */,
+				E588E4A72276D05800A29DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E588E4A82276D05800A29DD4 /* Build configuration list for PBXNativeTarget "FitcordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E588E4A92276D05800A29DD4 /* Debug */,
+				E588E4AA2276D05800A29DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E588E4AB2276D05800A29DD4 /* Build configuration list for PBXNativeTarget "FitcordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E588E4AC2276D05800A29DD4 /* Debug */,
+				E588E4AD2276D05800A29DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E592C7FD2278752F001A6078 /* Exercises.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E592C7FE2278752F001A6078 /* Exercises.xcdatamodel */,
+			);
+			currentVersion = E592C7FE2278752F001A6078 /* Exercises.xcdatamodel */;
+			path = Exercises.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E588E4732276D05600A29DD4 /* Project object */;
+}

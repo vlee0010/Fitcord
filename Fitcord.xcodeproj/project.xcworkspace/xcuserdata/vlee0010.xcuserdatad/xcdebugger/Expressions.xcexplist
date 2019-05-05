@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AppDelegate.init():AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ExercisesListTableViewController.init(coder:):ExercisesListTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ExercisesListTableViewController.databaseController.setter:ExercisesListTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ExercisesListTableViewController.init(coder:):(null)">
+      </ContextState>
+      <ContextState
+         contextName = "ExercisesListTableViewController.tableView(_:cellForRowAt:):ExercisesListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "exercise.name!">
+            </PersistentString>
+            <PersistentString
+               value = "image">
+            </PersistentString>
+            <PersistentString
+               value = "exercise.image">
+            </PersistentString>
+            <PersistentString
+               value = "exercise.image!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

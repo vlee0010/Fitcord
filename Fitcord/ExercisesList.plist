@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<array/>
+	<key>B</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Bench Press</string>
+			<key>Desc</key>
+			<string>1. Lying on a bench, hold the barbell over the chest, arms straight, hands placed slightly outside of shoulder width. Keep your chest up at all time, and allow the lower back to maintain a natural arch (not excessive). Lower the barbell to the top of the chest. Press the bar back up to the top, until your arms are straight.</string>
+			<key>Image</key>
+			<string></string>
+			<key>Muscle Group</key>
+			<string>Chest, Triceps</string>
+		</dict>
+	</array>
+	<key>C</key>
+	<dict/>
+	<key>D</key>
+	<dict/>
+</dict>
+</plist>
