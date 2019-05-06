@@ -20,6 +20,12 @@
 		E533EC0E2279D9C700123792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E533EC0D2279D9C700123792 /* Assets.xcassets */; };
 		E55B5C61227AC17B00856593 /* CreateExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B5C60227AC17B00856593 /* CreateExerciseViewController.swift */; };
 		E55B5C63227ACC1300856593 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E55B5C62227ACC1300856593 /* GoogleService-Info.plist */; };
+		E571B482227EF4A30092855A /* Routine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571B47E227EF4A30092855A /* Routine+CoreDataClass.swift */; };
+		E571B483227EF4A30092855A /* Routine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571B47F227EF4A30092855A /* Routine+CoreDataProperties.swift */; };
+		E571B484227EF4A30092855A /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571B480227EF4A30092855A /* Exercise+CoreDataClass.swift */; };
+		E571B485227EF4A30092855A /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571B481227EF4A30092855A /* Exercise+CoreDataProperties.swift */; };
+		E571B489227F07A20092855A /* RoutinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571B488227F07A20092855A /* RoutinesTableViewController.swift */; };
+		E571B48B227F16000092855A /* AddExerciseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E571B48A227F16000092855A /* AddExerciseDelegate.swift */; };
 		E588E47F2276D05600A29DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588E47E2276D05600A29DD4 /* AppDelegate.swift */; };
 		E588E4862276D05600A29DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E588E4842276D05600A29DD4 /* Main.storyboard */; };
 		E588E48B2276D05800A29DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E588E4892276D05800A29DD4 /* LaunchScreen.storyboard */; };
@@ -30,8 +36,6 @@
 		E592C80622787628001A6078 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C80522787628001A6078 /* DatabaseProtocol.swift */; };
 		E592C80822787678001A6078 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C80722787678001A6078 /* CoreDataController.swift */; };
 		E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C809227876B0001A6078 /* MulticastDelegate.swift */; };
-		E592C8132278787D001A6078 /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C8112278787D001A6078 /* Exercise+CoreDataClass.swift */; };
-		E592C8142278787D001A6078 /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C8122278787D001A6078 /* Exercise+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,12 @@
 		E533EC0D2279D9C700123792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E55B5C60227AC17B00856593 /* CreateExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExerciseViewController.swift; sourceTree = "<group>"; };
 		E55B5C62227ACC1300856593 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E571B47E227EF4A30092855A /* Routine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E571B47F227EF4A30092855A /* Routine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routine+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E571B480227EF4A30092855A /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E571B481227EF4A30092855A /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E571B488227F07A20092855A /* RoutinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTableViewController.swift; sourceTree = "<group>"; };
+		E571B48A227F16000092855A /* AddExerciseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseDelegate.swift; sourceTree = "<group>"; };
 		E588E47B2276D05600A29DD4 /* Fitcord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitcord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E588E47E2276D05600A29DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E588E4852276D05600A29DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,8 +93,6 @@
 		E592C80522787628001A6078 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		E592C80722787678001A6078 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		E592C809227876B0001A6078 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
-		E592C8112278787D001A6078 /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E592C8122278787D001A6078 /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +199,8 @@
 				E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */,
 				E501E0F2227DC6C9006F67C7 /* InitialViewController.swift */,
 				E501E0F4227DD018006F67C7 /* LoginViewController.swift */,
+				E571B488227F07A20092855A /* RoutinesTableViewController.swift */,
+				E571B48A227F16000092855A /* AddExerciseDelegate.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -198,8 +208,10 @@
 		E592C7FC227874C6001A6078 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				E592C8112278787D001A6078 /* Exercise+CoreDataClass.swift */,
-				E592C8122278787D001A6078 /* Exercise+CoreDataProperties.swift */,
+				E571B47E227EF4A30092855A /* Routine+CoreDataClass.swift */,
+				E571B47F227EF4A30092855A /* Routine+CoreDataProperties.swift */,
+				E571B480227EF4A30092855A /* Exercise+CoreDataClass.swift */,
+				E571B481227EF4A30092855A /* Exercise+CoreDataProperties.swift */,
 				E592C7FD2278752F001A6078 /* Exercises.xcdatamodeld */,
 			);
 			path = DataModel;
@@ -384,13 +396,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E571B482227EF4A30092855A /* Routine+CoreDataClass.swift in Sources */,
 				E592C7FF2278752F001A6078 /* Exercises.xcdatamodeld in Sources */,
 				E588E47F2276D05600A29DD4 /* AppDelegate.swift in Sources */,
 				E592C80622787628001A6078 /* DatabaseProtocol.swift in Sources */,
 				E533EC052279764700123792 /* ExerciseDetailViewController.swift in Sources */,
-				E592C8132278787D001A6078 /* Exercise+CoreDataClass.swift in Sources */,
+				E571B484227EF4A30092855A /* Exercise+CoreDataClass.swift in Sources */,
+				E571B48B227F16000092855A /* AddExerciseDelegate.swift in Sources */,
+				E571B483227EF4A30092855A /* Routine+CoreDataProperties.swift in Sources */,
 				E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */,
-				E592C8142278787D001A6078 /* Exercise+CoreDataProperties.swift in Sources */,
+				E571B489227F07A20092855A /* RoutinesTableViewController.swift in Sources */,
 				E55B5C61227AC17B00856593 /* CreateExerciseViewController.swift in Sources */,
 				E501E0ED227D962E006F67C7 /* SignupViewController.swift in Sources */,
 				E501E0EF227D9713006F67C7 /* AuthenticationViewController.swift in Sources */,
@@ -399,6 +414,7 @@
 				E501E0F5227DD018006F67C7 /* LoginViewController.swift in Sources */,
 				E592C80822787678001A6078 /* CoreDataController.swift in Sources */,
 				E592C7FB22787478001A6078 /* ExercisesListTableViewController.swift in Sources */,
+				E571B485227EF4A30092855A /* Exercise+CoreDataProperties.swift in Sources */,
 				E501E0F3227DC6C9006F67C7 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -56,7 +56,7 @@ class CreateExerciseViewController: UIViewController, UITextFieldDelegate, UIPic
             let exerciseMuscleGroup = muscleGroupTextField.text!
           
         
-                let _ = databaseController!.addExercise(name: exerciseName, desc: exerciseDesc, image: "defaultImage", muscleGroup: exerciseMuscleGroup)
+            let _ = databaseController!.addExercise(name: exerciseName, desc: exerciseDesc, image: "defaultImage", muscleGroup: exerciseMuscleGroup)
             
             
             // Inform the task has been saved successfully

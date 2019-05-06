@@ -1,5 +1,5 @@
 //
-//  Exercise+CoreDataClass.swift
+//  Routine+CoreDataClass.swift
 //  Fitcord
 //
 //  Created by Van Le on 5/5/19.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Exercise)
-public class Exercise: NSManagedObject {
+@objc(Routine)
+public class Routine: NSManagedObject {
 
 }

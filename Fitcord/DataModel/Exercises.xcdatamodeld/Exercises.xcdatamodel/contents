@@ -5,8 +5,14 @@
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="muscleGroup" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="routines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Routine" inverseName="exercises" inverseEntity="Routine" syncable="YES"/>
+    </entity>
+    <entity name="Routine" representedClassName="Routine" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="routines" inverseEntity="Exercise" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Routine" positionX="-63" positionY="9" width="128" height="75"/>
     </elements>
 </model>

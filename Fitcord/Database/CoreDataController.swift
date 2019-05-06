@@ -12,9 +12,11 @@ import CoreData
 
 class CoreDataController: NSObject, DatabaseProtocol, NSFetchedResultsControllerDelegate {
     
+    let DEFAULT_ROUTINE_NAME = "Default Routine"
     var listeners = MulticastDelegate<DatabaseListener>()
     var persistantContainer: NSPersistentContainer
     var allExercisesFetchedResultsController: NSFetchedResultsController<Exercise>?
+    var allRoutinesFetchedResultsController: NSFetchedResultsController<Exercise>?
     
     override init() {
         persistantContainer = NSPersistentContainer(name: "Exercises")
@@ -23,7 +25,6 @@ class CoreDataController: NSObject, DatabaseProtocol, NSFetchedResultsController
                 fatalError("Failed to load Core Data stack: \(error)")
             }
         }
-        
         super.init()
         
         if fetchAllExercises().count == 0 {
@@ -54,6 +55,21 @@ class CoreDataController: NSObject, DatabaseProtocol, NSFetchedResultsController
         return exercise
     }
     
+    func addRoutine(routineName: String) -> Routine {
+        let routine = NSEntityDescription.insertNewObject(forEntityName: "Routine", into:
+            persistantContainer.viewContext) as! Routine
+        routine.name = routineName
+
+        saveContext()
+        return routine
+    }
+    
+    func addExerciseToRoutine(exercise: Exercise, routine: Routine) -> Bool {
+        routine.addToExercises(exercise)
+        saveContext()
+        return true
+    }
+    
     func updateExercise(name: String, desc: String, image: String, muscleGroup: String, exercise: Exercise) -> Exercise {
         exercise.setValue(name, forKey: "name")
         exercise.setValue(desc, forKey: "desc")
@@ -64,10 +80,19 @@ class CoreDataController: NSObject, DatabaseProtocol, NSFetchedResultsController
         return exercise
     }
     
+    func deleteRoutine(routine: Routine) {
+        persistantContainer.viewContext.delete(routine)
+        saveContext()
+    }
     
     func deleteExercise(exercise: Exercise) {
         persistantContainer.viewContext.delete(exercise)
         // This less efficient than batching changes and saving once at end.
+        saveContext()
+    }
+    
+    func removeExerciseFromRoutine(exercise: Exercise, routine: Routine) {
+        routine.removeFromExercises(exercise)
         saveContext()
     }
     
@@ -78,6 +103,12 @@ class CoreDataController: NSObject, DatabaseProtocol, NSFetchedResultsController
         if listener.listenerType == ListenerType.exercises {
             listener.onExerciseListChange(change: .update, exercises: fetchAllExercises())
         }
+        
+        if listener.listenerType == ListenerType.routine || listener.listenerType ==
+            ListenerType.all {
+            listener.onRoutineListChange(change: .update, routineExercises: fetchAllRoutines())
+        }
+        
         
     }
     
@@ -110,6 +141,35 @@ class CoreDataController: NSObject, DatabaseProtocol, NSFetchedResultsController
         return exercises
     }
     
+    func fetchAllRoutines() -> [Exercise] {
+        if allRoutinesFetchedResultsController == nil {
+            let fetchRequest: NSFetchRequest<Exercise> = Exercise.fetchRequest()
+            let nameSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+            fetchRequest.sortDescriptors = [nameSortDescriptor]
+            let predicate = NSPredicate(format: "ANY routines.name == %@",
+                                        DEFAULT_ROUTINE_NAME)
+            fetchRequest.predicate = predicate
+            allRoutinesFetchedResultsController =
+                NSFetchedResultsController<Exercise>(fetchRequest: fetchRequest,
+                                                      managedObjectContext: persistantContainer.viewContext, sectionNameKeyPath: nil,
+                                                      cacheName: nil)
+            allRoutinesFetchedResultsController?.delegate = self
+            
+            do {
+                try allRoutinesFetchedResultsController?.performFetch()
+            } catch {
+                print("Fetch Request failed: \(error)")
+            }
+        }
+        
+        var exercises = [Exercise]()
+        if allRoutinesFetchedResultsController?.fetchedObjects != nil {
+            exercises = (allRoutinesFetchedResultsController?.fetchedObjects)!
+        }
+        
+        return exercises
+    }
+    
     
     // MARK: - Fetched Results Conttroller Delegate
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
@@ -120,8 +180,38 @@ class CoreDataController: NSObject, DatabaseProtocol, NSFetchedResultsController
                 }
             }
         }
+        else if controller == allRoutinesFetchedResultsController {
+            listeners.invoke { (listener) in
+                if listener.listenerType == ListenerType.routine ||
+                    listener.listenerType == ListenerType.all {
+                    listener.onRoutineListChange(change: .update, routineExercises: fetchAllRoutines())
+                }
+            }
+        }
+        
         
     }
+    
+    lazy var defaultRoutine: Routine = {
+        var routines = [Routine]()
+        
+        let request: NSFetchRequest<Routine> = Routine.fetchRequest()
+        let predicate = NSPredicate(format: "name = %@", DEFAULT_ROUTINE_NAME)
+        request.predicate = predicate
+        do {
+            try routines = persistantContainer.viewContext.fetch(Routine.fetchRequest())
+                as! [Routine]
+        } catch {
+            print("Fetch Request failed: \(error)")
+        }
+        
+        if routines.count == 0 {
+            return addRoutine(routineName: DEFAULT_ROUTINE_NAME)
+        }
+        else {
+            return routines.first!
+        }
+    }()
     
     func createDefaultEntries() {
         let _ = addExercise(name: "Bench Press",

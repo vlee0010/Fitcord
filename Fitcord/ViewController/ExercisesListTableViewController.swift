@@ -19,8 +19,11 @@ class ExercisesListTableViewController: UITableViewController, UISearchResultsUp
     var allExerises: [Exercise] = []
     var filteredExercises: [Exercise] = []
    
+    weak var exerciseDelegate: AddExerciseDelegate?
     weak var databaseController: DatabaseProtocol!
 
+    var isAdding : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +45,11 @@ class ExercisesListTableViewController: UITableViewController, UISearchResultsUp
         // This view controller decides how the search controller is presented.
         definesPresentationContext = true
         
+        self.tabBarItem.title = "cac"
+        if !(tabBarController?.tabBar.selectedItem?.title == "Exercises"){
+            self.navigationItem.rightBarButtonItem?.isEnabled = false
+            isAdding = true
+        }
         
     }
     
@@ -121,6 +129,21 @@ class ExercisesListTableViewController: UITableViewController, UISearchResultsUp
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (isAdding){
+            if indexPath.section == SECTION_COUNT {
+                tableView.deselectRow(at: indexPath, animated: false)
+                return
+            }
+            
+            if exerciseDelegate!.addExercise(newExercise: filteredExercises[indexPath.row]) {
+                navigationController?.popViewController(animated: true)
+                return
+            }
+        }
+        
+    }
+    
     // This function activate the swipe action. Swipe right to Mark the Task as Done
     // Can only be used for To Do screen, and not available in Completed task screen
 //    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -154,7 +177,10 @@ class ExercisesListTableViewController: UITableViewController, UISearchResultsUp
     
     var listenerType = ListenerType.exercises
     
-    // Divide the task into 2 array for displaying: notCompleted and Completed
+    func onRoutineListChange(change: DatabaseChange, routineExercises: [Exercise]) {
+        // Won't be called.
+    }
+    
     // this function is called when the list is changed
     func onExerciseListChange(change: DatabaseChange, exercises: [Exercise]) {
         allExerises = exercises
