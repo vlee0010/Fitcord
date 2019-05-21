@@ -58,14 +58,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func handleDismissButton(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
-    }
     
-    /**
-     Adjusts the center of the **continueButton** above the keyboard.
-     - Parameter notification: Contains the keyboardFrame info.
-     */
+    @IBAction func handleDismissButton(_ sender: Any) {
+         self.dismiss(animated: false, completion: nil)
+    }
     
     @objc func keyboardWillAppear(notification: NSNotification){
         
@@ -74,7 +70,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         loginButton.center = CGPoint(x: view.center.x,
                                      y: view.frame.height - keyboardFrame.height - 16.0 - loginButton.frame.height / 2)
-        activityView.center = loginButton.center
     }
     
     /**

@@ -5,8 +5,8 @@
 //  Created by Van Le on 29/4/19.
 //  Copyright © 2019 Van Le. All rights reserved.
 //
-
 import XCTest
+
 @testable import Fitcord
 
 class FitcordTests: XCTestCase {

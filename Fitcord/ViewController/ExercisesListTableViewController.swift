@@ -105,6 +105,8 @@ class ExercisesListTableViewController: UITableViewController, UISearchResultsUp
         
             exerciseCell.nameLabel.text =  exercise.name!
             exerciseCell.muscleGroupLabel.text = exercise.muscleGroup!
+        
+           
             
             return exerciseCell
 

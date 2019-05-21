@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26C1207821B9F1B30F3DC51A /* libPods-Fitcord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6AF3A9941F304EB15C55CC /* libPods-Fitcord.a */; };
+		3091752EC51EEEC2E72F9B7F /* Pods_Fitcord_FitcordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFD6FF7AB2E25FECF1EDDB8 /* Pods_Fitcord_FitcordTests.framework */; };
+		D6E1D4052DDFA8AB6285A22A /* Pods_Fitcord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732EEB9AC6F318E55BA11E3A /* Pods_Fitcord.framework */; };
+		E5017D2B2292F18400FF5526 /* AddRoutineDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5017D2A2292F18400FF5526 /* AddRoutineDelegate.swift */; };
 		E501E0ED227D962E006F67C7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0EC227D962E006F67C7 /* SignupViewController.swift */; };
 		E501E0EF227D9713006F67C7 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0EE227D9713006F67C7 /* AuthenticationViewController.swift */; };
 		E501E0F1227DC40E006F67C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */; };
@@ -36,6 +38,9 @@
 		E592C80622787628001A6078 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C80522787628001A6078 /* DatabaseProtocol.swift */; };
 		E592C80822787678001A6078 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C80722787678001A6078 /* CoreDataController.swift */; };
 		E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C809227876B0001A6078 /* MulticastDelegate.swift */; };
+		E5C876EB2282D18700530D3C /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C876EA2282D18600530D3C /* BaseTabBarController.swift */; };
+		E5FD7B5A228E5275003D2B4F /* RoutineCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD7B59228E5275003D2B4F /* RoutineCardsViewController.swift */; };
+		E5FD7B5C228E5394003D2B4F /* CustomRoutineCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD7B5B228E5394003D2B4F /* CustomRoutineCardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +61,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21BDB06C271CDB6AE1428E7F /* Pods-Fitcord-FitcordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcord-FitcordTests.debug.xcconfig"; path = "Target Support Files/Pods-Fitcord-FitcordTests/Pods-Fitcord-FitcordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E5F5884E7AAB1F6B6DD36F0 /* Pods-Fitcord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcord.release.xcconfig"; path = "Target Support Files/Pods-Fitcord/Pods-Fitcord.release.xcconfig"; sourceTree = "<group>"; };
+		6954C441237FA53D91B0E387 /* Pods-Fitcord-FitcordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcord-FitcordTests.release.xcconfig"; path = "Target Support Files/Pods-Fitcord-FitcordTests/Pods-Fitcord-FitcordTests.release.xcconfig"; sourceTree = "<group>"; };
+		732EEB9AC6F318E55BA11E3A /* Pods_Fitcord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitcord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4E6C890402CC0E374969BA /* Pods-Fitcord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitcord.debug.xcconfig"; path = "Target Support Files/Pods-Fitcord/Pods-Fitcord.debug.xcconfig"; sourceTree = "<group>"; };
-		DE6AF3A9941F304EB15C55CC /* libPods-Fitcord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fitcord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5017D2A2292F18400FF5526 /* AddRoutineDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoutineDelegate.swift; sourceTree = "<group>"; };
 		E501E0EC227D962E006F67C7 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E501E0EE227D9713006F67C7 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 		E592C80522787628001A6078 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		E592C80722787678001A6078 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		E592C809227876B0001A6078 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		E5C876EA2282D18600530D3C /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		E5FD7B59228E5275003D2B4F /* RoutineCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCardsViewController.swift; sourceTree = "<group>"; };
+		E5FD7B5B228E5394003D2B4F /* CustomRoutineCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoutineCardsViewController.swift; sourceTree = "<group>"; };
+		FCFD6FF7AB2E25FECF1EDDB8 /* Pods_Fitcord_FitcordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitcord_FitcordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26C1207821B9F1B30F3DC51A /* libPods-Fitcord.a in Frameworks */,
+				D6E1D4052DDFA8AB6285A22A /* Pods_Fitcord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3091752EC51EEEC2E72F9B7F /* Pods_Fitcord_FitcordTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +137,8 @@
 		48DFE80D8C3EB49F20C3FE5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE6AF3A9941F304EB15C55CC /* libPods-Fitcord.a */,
+				732EEB9AC6F318E55BA11E3A /* Pods_Fitcord.framework */,
+				FCFD6FF7AB2E25FECF1EDDB8 /* Pods_Fitcord_FitcordTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +179,7 @@
 				E588E4842276D05600A29DD4 /* Main.storyboard */,
 				E588E4892276D05800A29DD4 /* LaunchScreen.storyboard */,
 				E588E48C2276D05800A29DD4 /* Info.plist */,
+				E5C876EA2282D18600530D3C /* BaseTabBarController.swift */,
 			);
 			path = Fitcord;
 			sourceTree = "<group>";
@@ -191,16 +206,19 @@
 			isa = PBXGroup;
 			children = (
 				E592C7FA22787478001A6078 /* ExercisesListTableViewController.swift */,
+				E5FD7B5B228E5394003D2B4F /* CustomRoutineCardsViewController.swift */,
+				E5FD7B59228E5275003D2B4F /* RoutineCardsViewController.swift */,
 				E533EC022279712E00123792 /* ExerciseTableViewCell.swift */,
 				E533EC042279764700123792 /* ExerciseDetailViewController.swift */,
 				E55B5C60227AC17B00856593 /* CreateExerciseViewController.swift */,
-				E501E0EC227D962E006F67C7 /* SignupViewController.swift */,
 				E501E0EE227D9713006F67C7 /* AuthenticationViewController.swift */,
+				E501E0EC227D962E006F67C7 /* SignupViewController.swift */,
 				E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */,
 				E501E0F2227DC6C9006F67C7 /* InitialViewController.swift */,
 				E501E0F4227DD018006F67C7 /* LoginViewController.swift */,
-				E571B488227F07A20092855A /* RoutinesTableViewController.swift */,
 				E571B48A227F16000092855A /* AddExerciseDelegate.swift */,
+				E5017D2A2292F18400FF5526 /* AddRoutineDelegate.swift */,
+				E571B488227F07A20092855A /* RoutinesTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -232,6 +250,8 @@
 			children = (
 				7F4E6C890402CC0E374969BA /* Pods-Fitcord.debug.xcconfig */,
 				2E5F5884E7AAB1F6B6DD36F0 /* Pods-Fitcord.release.xcconfig */,
+				21BDB06C271CDB6AE1428E7F /* Pods-Fitcord-FitcordTests.debug.xcconfig */,
+				6954C441237FA53D91B0E387 /* Pods-Fitcord-FitcordTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -247,6 +267,7 @@
 				E588E4772276D05600A29DD4 /* Sources */,
 				E588E4782276D05600A29DD4 /* Frameworks */,
 				E588E4792276D05600A29DD4 /* Resources */,
+				668F38FD351007059CB0ADF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E588E4A82276D05800A29DD4 /* Build configuration list for PBXNativeTarget "FitcordTests" */;
 			buildPhases = (
+				6AB53F617C1FF1DB21E20480 /* [CP] Check Pods Manifest.lock */,
 				E588E48D2276D05800A29DD4 /* Sources */,
 				E588E48E2276D05800A29DD4 /* Frameworks */,
 				E588E48F2276D05800A29DD4 /* Resources */,
+				FF938F0964C8BDA32BB98964 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,10 +331,12 @@
 					};
 					E588E4902276D05800A29DD4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = E588E47A2276D05600A29DD4;
 					};
 					E588E49B2276D05800A29DD4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = E588E47A2276D05600A29DD4;
 					};
 				};
@@ -389,6 +414,108 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		668F38FD351007059CB0ADF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitcord/Pods-Fitcord-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CardParts/CardParts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CardParts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitcord/Pods-Fitcord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AB53F617C1FF1DB21E20480 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitcord-FitcordTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF938F0964C8BDA32BB98964 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitcord-FitcordTests/Pods-Fitcord-FitcordTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CardParts/CardParts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CardParts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitcord-FitcordTests/Pods-Fitcord-FitcordTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -401,16 +528,20 @@
 				E588E47F2276D05600A29DD4 /* AppDelegate.swift in Sources */,
 				E592C80622787628001A6078 /* DatabaseProtocol.swift in Sources */,
 				E533EC052279764700123792 /* ExerciseDetailViewController.swift in Sources */,
+				E5017D2B2292F18400FF5526 /* AddRoutineDelegate.swift in Sources */,
 				E571B484227EF4A30092855A /* Exercise+CoreDataClass.swift in Sources */,
 				E571B48B227F16000092855A /* AddExerciseDelegate.swift in Sources */,
 				E571B483227EF4A30092855A /* Routine+CoreDataProperties.swift in Sources */,
+				E5FD7B5C228E5394003D2B4F /* CustomRoutineCardsViewController.swift in Sources */,
 				E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */,
 				E571B489227F07A20092855A /* RoutinesTableViewController.swift in Sources */,
 				E55B5C61227AC17B00856593 /* CreateExerciseViewController.swift in Sources */,
 				E501E0ED227D962E006F67C7 /* SignupViewController.swift in Sources */,
 				E501E0EF227D9713006F67C7 /* AuthenticationViewController.swift in Sources */,
 				E533EC032279712E00123792 /* ExerciseTableViewCell.swift in Sources */,
+				E5C876EB2282D18700530D3C /* BaseTabBarController.swift in Sources */,
 				E501E0F1227DC40E006F67C7 /* ProfileViewController.swift in Sources */,
+				E5FD7B5A228E5275003D2B4F /* RoutineCardsViewController.swift in Sources */,
 				E501E0F5227DD018006F67C7 /* LoginViewController.swift in Sources */,
 				E592C80822787678001A6078 /* CoreDataController.swift in Sources */,
 				E592C7FB22787478001A6078 /* ExercisesListTableViewController.swift in Sources */,
@@ -591,6 +722,7 @@
 			baseConfigurationReference = 7F4E6C890402CC0E374969BA /* Pods-Fitcord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S52HC4LU57;
 				INFOPLIST_FILE = Fitcord/Info.plist;
@@ -601,7 +733,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.Fitcord";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -611,6 +744,7 @@
 			baseConfigurationReference = 2E5F5884E7AAB1F6B6DD36F0 /* Pods-Fitcord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S52HC4LU57;
 				INFOPLIST_FILE = Fitcord/Info.plist;
@@ -621,13 +755,15 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.Fitcord";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		E588E4A92276D05800A29DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BDB06C271CDB6AE1428E7F /* Pods-Fitcord-FitcordTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -640,7 +776,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitcord.app/Fitcord";
 			};
@@ -648,6 +784,7 @@
 		};
 		E588E4AA2276D05800A29DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6954C441237FA53D91B0E387 /* Pods-Fitcord-FitcordTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,7 +797,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitcord.app/Fitcord";
 			};
@@ -679,7 +816,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Fitcord;
 			};
@@ -698,7 +835,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Monash-University.FitcordUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Fitcord;
 			};

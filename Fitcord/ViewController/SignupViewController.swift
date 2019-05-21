@@ -34,6 +34,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         userNameTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         emailTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -127,26 +128,46 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                 let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                 changeRequest?.displayName = username
                 
+                guard let uid = Auth.auth().currentUser?.uid else {
+                    return
+                }
+                
                 changeRequest?.commitChanges { error in
                     if error == nil {
                         print("User display name changed!")
                         self.dismiss(animated: false, completion: nil)
                     } else {
-                        print("Fuck")
                         print("Error: \(error!.localizedDescription)")
                     }
                 }
+                let values = ["name": username, "email": email]
+                
+                self.registerUserIntoDatabaseWithUID(uid, values: values as [String : AnyObject])
                 
             } else {
                 let errorMsg = error!.localizedDescription
                 
                 self.displayMessage(title: "Error Signing Up    ", message: errorMsg)
-                print("Cac")
                 print("Error: \(error!.localizedDescription)")
             }
         }
         
         
+    }
+    
+    fileprivate func registerUserIntoDatabaseWithUID(_ uid: String, values: [String: AnyObject]) {
+        let ref = Database.database().reference()
+        let usersReference = ref.child("users").child(uid)
+        
+        usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+            
+            if let err = err {
+                print(err)
+                return
+            }
+            
+            self.dismiss(animated: true, completion: nil)
+        })
     }
     
     //message response
