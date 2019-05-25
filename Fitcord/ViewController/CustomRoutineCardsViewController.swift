@@ -10,20 +10,20 @@ import Foundation
 import CardParts
 import RxCocoa
 import RxSwift
+import Firebase
 
 class CustomRoutineCardsViewController:  CardPartsViewController, CardPartsLongPressGestureRecognizerDelegate{
-    
+    var routineID : String = ""
     var minimumPressDuration: CFTimeInterval = 0.0
-    
+    var ref = Database.database().reference()
+    var currentUser = Auth.auth().currentUser!
     
     let cardPartTitleWithMenu = CardPartTitleView(type: .titleWithMenu)
     let viewModel = CardPartTableViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        cardPartTitleWithMenu.title = "Routine Name"
-        cardPartTitleWithMenu.menuTitle = "Routine Name"
+       
         cardPartTitleWithMenu.menuOptions = ["Start Workout", "View Routine"]
         setupCardParts([cardPartTitleWithMenu])
 
@@ -49,7 +49,10 @@ class CustomRoutineCardsViewController:  CardPartsViewController, CardPartsLongP
             index += 1
         }
         
-        let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: {(action) in self.deleteRoutine()})
+        let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: {(action) in self.deleteRoutine()
+            alert.dismiss(animated: true, completion: nil)
+            
+        })
         alert.addAction(deleteAction)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler:{ (action) in
@@ -74,19 +77,31 @@ class CustomRoutineCardsViewController:  CardPartsViewController, CardPartsLongP
                 
             }
             
-            if index == 1 {
+            if index == 1 { 
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let resultViewController = storyBoard.instantiateViewController(withIdentifier: "RoutinesTableVC") as! RoutinesTableViewController
                 self?.navigationController?.pushViewController(resultViewController, animated: true)
             
         }
         
+        
     }
  }
     
     func deleteRoutine()  {
+        let uid = self.currentUser.uid
+        print(routineID)
+        self.ref.child("users").child(uid).child("routineCollection").child(routineID).removeValue{ error, _ in
+            print(error)
+            self.removeCard(id: self.routineID)
+            }
+            
+        }
+    func removeCard(id:String) {
+        let routineController = RoutineCardsViewController()
+        routineController.removeCard(id: self.routineID)
         
-    }
+ 0     }
 }
 
 class CardPartTableViewModel {

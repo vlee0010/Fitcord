@@ -15,6 +15,7 @@
 		E501E0F1227DC40E006F67C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */; };
 		E501E0F3227DC6C9006F67C7 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0F2227DC6C9006F67C7 /* InitialViewController.swift */; };
 		E501E0F5227DD018006F67C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E0F4227DD018006F67C7 /* LoginViewController.swift */; };
+		E503509722994C62009BD1F1 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503509622994C62009BD1F1 /* Routine.swift */; };
 		E533EC032279712E00123792 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533EC022279712E00123792 /* ExerciseTableViewCell.swift */; };
 		E533EC052279764700123792 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533EC042279764700123792 /* ExerciseDetailViewController.swift */; };
 		E533EC0722797D0600123792 /* TabBarIcon in Resources */ = {isa = PBXBuildFile; fileRef = E533EC0622797D0600123792 /* TabBarIcon */; };
@@ -39,6 +40,7 @@
 		E592C80822787678001A6078 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C80722787678001A6078 /* CoreDataController.swift */; };
 		E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592C809227876B0001A6078 /* MulticastDelegate.swift */; };
 		E5C876EB2282D18700530D3C /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C876EA2282D18600530D3C /* BaseTabBarController.swift */; };
+		E5D5BAC92296D9DC0091418C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D5BAC82296D9DC0091418C /* HealthKit.framework */; };
 		E5FD7B5A228E5275003D2B4F /* RoutineCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD7B59228E5275003D2B4F /* RoutineCardsViewController.swift */; };
 		E5FD7B5C228E5394003D2B4F /* CustomRoutineCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD7B5B228E5394003D2B4F /* CustomRoutineCardsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,7 @@
 		E501E0F0227DC40E006F67C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E501E0F2227DC6C9006F67C7 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E501E0F4227DD018006F67C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E503509622994C62009BD1F1 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		E533EC022279712E00123792 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		E533EC042279764700123792 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		E533EC0622797D0600123792 /* TabBarIcon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TabBarIcon; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 		E592C80722787678001A6078 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		E592C809227876B0001A6078 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 		E5C876EA2282D18600530D3C /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		E5D5BAC72296D9DC0091418C /* Fitcord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fitcord.entitlements; sourceTree = "<group>"; };
+		E5D5BAC82296D9DC0091418C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		E5FD7B59228E5275003D2B4F /* RoutineCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCardsViewController.swift; sourceTree = "<group>"; };
 		E5FD7B5B228E5394003D2B4F /* CustomRoutineCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoutineCardsViewController.swift; sourceTree = "<group>"; };
 		FCFD6FF7AB2E25FECF1EDDB8 /* Pods_Fitcord_FitcordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitcord_FitcordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E1D4052DDFA8AB6285A22A /* Pods_Fitcord.framework in Frameworks */,
+				E5D5BAC92296D9DC0091418C /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,10 +143,19 @@
 		48DFE80D8C3EB49F20C3FE5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5D5BAC82296D9DC0091418C /* HealthKit.framework */,
 				732EEB9AC6F318E55BA11E3A /* Pods_Fitcord.framework */,
 				FCFD6FF7AB2E25FECF1EDDB8 /* Pods_Fitcord_FitcordTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E503509522994C4C009BD1F1 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E503509622994C62009BD1F1 /* Routine.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		E588E4722276D05600A29DD4 = {
@@ -169,6 +184,8 @@
 		E588E47D2276D05600A29DD4 /* Fitcord */ = {
 			isa = PBXGroup;
 			children = (
+				E503509522994C4C009BD1F1 /* Class */,
+				E5D5BAC72296D9DC0091418C /* Fitcord.entitlements */,
 				E55B5C62227ACC1300856593 /* GoogleService-Info.plist */,
 				E533EC0B2279B0B600123792 /* Exercise Images */,
 				E533EC0622797D0600123792 /* TabBarIcon */,
@@ -328,6 +345,11 @@
 				TargetAttributes = {
 					E588E47A2276D05600A29DD4 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					E588E4902276D05800A29DD4 = {
 						CreatedOnToolsVersion = 10.1;
@@ -533,6 +555,7 @@
 				E571B48B227F16000092855A /* AddExerciseDelegate.swift in Sources */,
 				E571B483227EF4A30092855A /* Routine+CoreDataProperties.swift in Sources */,
 				E5FD7B5C228E5394003D2B4F /* CustomRoutineCardsViewController.swift in Sources */,
+				E503509722994C62009BD1F1 /* Routine.swift in Sources */,
 				E592C80A227876B0001A6078 /* MulticastDelegate.swift in Sources */,
 				E571B489227F07A20092855A /* RoutinesTableViewController.swift in Sources */,
 				E55B5C61227AC17B00856593 /* CreateExerciseViewController.swift in Sources */,
@@ -722,6 +745,7 @@
 			baseConfigurationReference = 7F4E6C890402CC0E374969BA /* Pods-Fitcord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fitcord/Fitcord.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S52HC4LU57;
@@ -744,6 +768,7 @@
 			baseConfigurationReference = 2E5F5884E7AAB1F6B6DD36F0 /* Pods-Fitcord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fitcord/Fitcord.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S52HC4LU57;

@@ -143,6 +143,12 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                 let values = ["name": username, "email": email]
                 
                 self.registerUserIntoDatabaseWithUID(uid, values: values as [String : AnyObject])
+                let ref = Database.database().reference()
+                let usersReference = ref.child("users").child(uid)
+               
+                
+                let routineCollectionRef = usersReference.child("routineCollection")
+                routineCollectionRef.setValue("")
                 
             } else {
                 let errorMsg = error!.localizedDescription
